@@ -1,0 +1,32 @@
+# IBM Developer's Workframe/2 Make File Creation run at 19:38:38 on 12/26/92
+
+# Make File Creation run in directory:
+#   D:\DEV\GENERIC;
+
+# Assumed INCLUDE environment variable path:
+#   D:\TOOLKT20\C\OS2H;
+#   D:\TOOLKT20\ASM\OS2INC;
+#   D:\IBMC\INCLUDE;
+#   D:\BCOS2\INCLUDE;
+#   C:\IBMLAN\NETSRC\H;
+#   D:\SQLLIB;
+#   D:\MUGLIB;
+
+
+GENERIC.RES:  GENERIC.RC  \
+#  {.;$(INCLUDE)}OS2.H  \
+   {.;$(INCLUDE)}GENERIC.H  \
+   GENERIC.ICO  \
+   GENERIC.DLG  \
+     GENERIC.H  \
+   GENERIC.MAK
+
+GENERIC.HLP:  GENERIC.IPF  \
+   GENERIC.MAK
+
+GENERIC.OBJ:  GENERIC.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}generic.h  \
+   GENERIC.MAK

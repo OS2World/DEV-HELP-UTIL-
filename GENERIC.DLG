@@ -1,0 +1,31 @@
+DLGINCLUDE 1 "GENERIC.H"
+
+DLGTEMPLATE IDD_ABOUTBOX LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "About Generic", IDD_ABOUTBOX, 27, 8, 204, 83, WS_VISIBLE, 
+            FCF_TITLEBAR
+    BEGIN
+        CTEXT           "Generic", 3080, 34, 71, 129, 8
+        CTEXT           "A Generic PM Template", 3081, 0, 61, 203, 8
+        CTEXT           "Version 1.00 - 12/25/92", 3082, 3, 52, 198, 8
+        CTEXT           "(C)opyright 1992, Gene Backlin", 3084, 1, 41, 200, 
+                        8
+        CTEXT           "All Rights Reserved", 3085, 1, 32, 201, 8
+        CTEXT           "CompuServe ID 70401,1574", 3086, 5, 21, 193, 8
+        ICON            ID_MENU_RESOURCE, 0, 4, 63, 21, 16, WS_GROUP
+        DEFPUSHBUTTON   "~Ok", DID_OK, 79, 3, 40, 14
+    END
+END
+
+DLGTEMPLATE IDD_DIS_GENERIC LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Generic Display Dialog Box", IDD_DIS_GENERIC, 14, 7, 179, 46, 
+            WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        LTEXT           "This is a Generic Text Message", 4001, 13, 29, 152, 
+                        8
+        PUSHBUTTON      "O~k", DID_OK, 21, 6, 40, 14
+        PUSHBUTTON      "C~ancel", DID_CANCEL, 67, 6, 40, 14
+        PUSHBUTTON      "Help", IDD_DIS_GENERIC_HELP, 113, 6, 40, 14, BS_HELP
+    END
+END
